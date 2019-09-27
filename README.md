@@ -152,10 +152,8 @@ def brightness_level(photo, brightness = 1):
             if(conv[i,j,c]>255):
                 conv[i,j,c]=255
     return conv
-    ```
-    
-![6](https://user-images.githubusercontent.com/31492509/65737130-e22eda80-e0b3-11e9-8665-0c134abb4476.png)
-  
 
+``` 
+  ![6](https://user-images.githubusercontent.com/31492509/65737130-e22eda80-e0b3-11e9-8665-0c134abb4476.png)
 
 
