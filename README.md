@@ -37,7 +37,7 @@ def display_rgb(photo, rgb):
     plt.imshow(display_b, 'Blues')
 ``` 
 
-IMG
+![1](https://user-images.githubusercontent.com/31492509/65737121-dba06300-e0b3-11e9-8f5b-5813f7f51199.png)
 
 # Convert from RGB TO YIQ
 ```
@@ -53,7 +53,7 @@ def from_rgb_to_yiq(photo):
   return yiq
   ```
   
-  IMG
+  ![2](https://user-images.githubusercontent.com/31492509/65737125-de02bd00-e0b3-11e9-87dc-8363fa4b4260.png)
   
  # Convert from YIQ to RGB
  ```
@@ -74,7 +74,7 @@ def from_rgb_to_yiq(photo):
     return rgb
 ```
 
-IMG
+![3](https://user-images.githubusercontent.com/31492509/65737127-dfcc8080-e0b3-11e9-8523-5803580f03a6.png)
 
 # Negative of the image
 Also negative of one of the RGB channels.
@@ -103,6 +103,7 @@ def negative_ch(photo,channel):
             
     return negative
 ```
+![4](https://user-images.githubusercontent.com/31492509/65737131-e22eda80-e0b3-11e9-947b-9da71656ba62.png)
 
 # Brightness control
 This is done by multiplying a constant for each RGB value, you can't let the values go out of the 0 - 255 range, also you can do the brightness for each RGB channel.
@@ -129,6 +130,7 @@ def brightness_level(photo, brightness = 1):
       
   return shinebright
   ```
+  ![5](https://user-images.githubusercontent.com/31492509/65737132-e2c77100-e0b3-11e9-9f38-8eed7db00bed.png)
   
   # Convolution operation
   ```
@@ -152,7 +154,7 @@ def brightness_level(photo, brightness = 1):
     return conv
     ```
     
-    IMG
+![6](https://user-images.githubusercontent.com/31492509/65737130-e22eda80-e0b3-11e9-8665-0c134abb4476.png)
   
 
 
