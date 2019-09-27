@@ -131,6 +131,28 @@ def brightness_level(photo, brightness = 1):
   ```
   
   # Convolution operation
+  ```
+  def convolution(photo,m,n,mask):
+    mask = rebater(mask)
+    shape = photo.shape
+    #shape = [6,6]
+    conv = np.zeros([shape[0]-(m-1),shape[1]-(n-1),3], dtype = int)
+    for i in range(0,shape[0]-(m-1)): 
+        for j in range(0,shape[1]-(n-1)):
+            for i_m in range(0,m):
+                for j_n in range(0,n):
+                    conv[i,j,0]+=mask[i_m,j_n]*photo[i+i_m,j+j_n,0]
+                    conv[i,j,1]+=mask[i_m,j_n]*photo[i+i_m,j+j_n,1]
+                    conv[i,j,2]+=mask[i_m,j_n]*photo[i+i_m,j+j_n,2]
+        for c in range(0,3):
+            if(conv[i,j,c]<0):
+                conv[i,j,c]=0
+            if(conv[i,j,c]>255):
+                conv[i,j,c]=255
+    return conv
+    ```
+    
+    IMG
   
 
 
